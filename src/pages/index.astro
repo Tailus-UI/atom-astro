@@ -6,11 +6,15 @@ import Layout from '../layouts/Layout.astro';
 import Testimonials from '../components/Testimonials.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Blog from '../components/Blog.astro';
+import BentoGrid from '@components/BentoGrid.astro';
+import SpeedSection from '@components/SpeedSection.astro';
 ---
 
 <Layout title="Welcome to Astrolus.">
 	<main class="space-y-40 mb-40">
 		<HeroSection/>
+		<BentoGrid />
+		<SpeedSection />
 		<Features/>
 		<Stats/>
 		<Testimonials/>

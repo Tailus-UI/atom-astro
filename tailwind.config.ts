@@ -9,12 +9,12 @@ module.exports = {
     plugins: [
         themer({
             palette: {
-                extend: "nature",
+                extend: "romance",
             },
             radius: "smooth",
             background: "light",
             border: "light",
-            padding:"large"
+            padding: "large",
         })
     ],
 };
