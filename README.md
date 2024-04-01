@@ -1,6 +1,6 @@
 # astrolus
 
-A page template built with astro and tailwindcss using tailus blocks.
+A page template built with astro and tailwindcss using tailus themer.
 
 ![Tailus astro based theme](./public/astrolus-light.png)
 ![Tailus astro based dark theme](./public/astrolus-dark.png)

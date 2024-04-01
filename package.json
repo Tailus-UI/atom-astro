@@ -1,5 +1,5 @@
 {
-  "name": "astrolus",
+  "name": "astrolus-2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "astro": "^1.9.2",
-    "astro-font": "^0.0.72"
+    "astro-font": "^0.0.72",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0"
