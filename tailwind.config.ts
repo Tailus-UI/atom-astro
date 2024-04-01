@@ -10,7 +10,6 @@ module.exports = {
         themer({
             palette: {
                 extend: "oz",
-                gray : "zinc"
             },
             radius: "smooth",
             background: "light",
