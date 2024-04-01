@@ -9,17 +9,13 @@ module.exports = {
     plugins: [
         themer({
             palette: {
-                extend : "nature"
+                extend: "oz",
+                gray : "zinc"
             },
-            radius: "smoothest",
+            radius: "smooth",
             background: "light",
             border: "light",
-            padding:"large",
-            components: {
-                button: {
-                    rounded : "2xl"
-                }
-            }
+            padding:"large"
         })
     ],
 };

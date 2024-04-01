@@ -3,6 +3,7 @@ import BrandLogo from "./BrandLogo.astro";
 import Container from "./Container.astro";
 import { button, ghostButton, outlinedButton } from "@tailus/themer-button"
 import {cn} from "@lib/utils"
+import Frame from "./Frame.astro";
 
 const links = [
     {
@@ -39,20 +40,23 @@ const links = [
                 </div>
                 <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden"></div>
                 <div id="navlinks" class="hidden flex-wrap lg:flex gap-6 items-center w-full lg:w-fit">
-                    <div class="w-full text-gray-600 dark:text-gray-200 lg:absolute lg:inset-0 lg:size-fit lg:m-auto">
-                        <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
-                            {
-                                links.map((link) => (
-                                    <li>
-                                        <a href={link.to} class="hover:text-primary block transition dark:hover:text-white md:px-4">
-                                            <span>{link.label}</span>
-                                        </a>
-                                    </li>
-                                ))
-                            }
-                        </ul>
+                    <div class="lg:fixed lg:inset-x-0 lg:size-fit lg:m-auto">
+                        <Frame>
+                            <div class="-my-0.5 relative w-full text-gray-600 dark:text-gray-300">
+                                <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
+                                    {
+                                        links.map((link) => (
+                                            <li>
+                                                <a href={link.to} class="px-2 py-1 hover:bg-gray-950/5 hover:text-gray-950 rounded-[--btn-border-radius] block transition dark:hover:text-white md:px-4 dark:hover:bg-white/5">
+                                                    <span>{link.label}</span>
+                                                </a>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                        </Frame>
                     </div>
-
                     <div class="w-full my-6 border-t dark:border-[--ui-dark-border-color] pt-6 lg:mt-0 flex gap-2 lg:my-0 lg:border-none lg:pt-0">
                         <a href="/login" class={cn(ghostButton.gray.sm, "hidden lg:flex")}>
                             Sign In
