@@ -1,7 +1,8 @@
 {
   "name": "astrolus-2",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@tailus/themer": "^0.0.5",
     "astro": "^1.9.2",
     "astro-font": "^0.0.72",
     "tailwindcss": "^3.4.3"

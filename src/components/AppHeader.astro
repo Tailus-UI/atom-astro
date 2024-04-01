@@ -15,38 +15,6 @@ const links = [
     },
 ];
 ---
-
-<script>
-    let isToggled = false;
-    const navlinks = document.querySelector("#navlinks");
-    const hamburger = document.querySelector("#hamburger");
-    const layer = document.querySelector("#navLayer");
-    const links = [...navlinks.querySelector("ul").children];
-
-    function toggleNavlinks() {
-        if (isToggled) {
-            navlinks.classList.add("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0");
-            hamburger.classList.add("toggled");
-            layer.classList.add("origin-top", "scale-y-100");
-        } else {
-            navlinks.classList.remove("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0");
-            hamburger.classList.remove("toggled");
-            layer.classList.remove("origin-top", "scale-y-100");
-        }
-    }
-    hamburger.addEventListener("click", () => {
-        isToggled = !isToggled;
-        toggleNavlinks();
-    });
-
-    links.forEach((link) => {
-        link.addEventListener("click", () => {
-            isToggled = !isToggled;
-            toggleNavlinks();
-        });
-    });
-</script>
-
 <header>
     <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
         <Container>
@@ -99,20 +67,3 @@ const links = [
         </Container>
     </nav>
 </header>
-
-<style>
-    #toggle_nav:checked ~ div #hamburger #line {
-        @apply translate-y-1.5 rotate-45;
-    }
-
-    #toggle_nav:checked ~ div #hamburger #line2 {
-        @apply -translate-y-1 -rotate-45;
-    }
-
-    .toggled div:first-child {
-        @apply translate-y-1.5 rotate-45;
-    }
-    .toggled div:last-child {
-        @apply -translate-y-1 -rotate-45;
-    }
-</style>
