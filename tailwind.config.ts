@@ -9,7 +9,7 @@ module.exports = {
     plugins: [
         themer({
             palette: {
-                extend: "passion",
+                extend: "nature",
             },
             radius: "smooth",
             background: "light",
