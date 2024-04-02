@@ -9,9 +9,9 @@ module.exports = {
     plugins: [
         themer({
             palette: {
-                extend: "nature",
+                extend: "oz",
             },
-            radius: "smooth",
+            radius: "smoothest",
             background: "light",
             border: "light",
             padding: "large"
