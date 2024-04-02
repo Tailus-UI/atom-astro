@@ -2,8 +2,7 @@
 
 Modern free Tailwind CSS, Astro landing page template for startups | built with Tailus Themer
 
-![Tailus astro based theme](./public/astrolus-light.png)
-![Tailus astro based dark theme](./public/astrolus-dark.png)
+![Tailus Atom cover](./public/cover.webp)
 
 ## 🚀 Project Structure
 
