@@ -1,7 +1,7 @@
 {
   "name": "atom",
   "description": "Modern free Tailwind CSS, Astro landing page template for startups | built with Tailus Themer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "type": "module",
   "scripts": {
