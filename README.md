@@ -1,6 +1,6 @@
-# astrolus
+# Atom
 
-A page template built with astro and tailwindcss using tailus themer.
+Modern free Tailwind CSS, Astro landing page template for startups | built with Tailus Themer
 
 ![Tailus astro based theme](./public/astrolus-light.png)
 ![Tailus astro based dark theme](./public/astrolus-dark.png)
