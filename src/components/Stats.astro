@@ -1,59 +1,32 @@
 ---
+import { cn } from "@lib/utils";
 import Container from "./Container.astro";
-
+import { card } from "@tailus/themer-card"
+import { softButton } from "@tailus/themer-button";
 ---
 
 <div id="solution">
     <Container>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-sky-500">
-        <path fill-rule="evenodd" d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z" clip-rule="evenodd" />
-        <path fill-rule="evenodd" d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z" clip-rule="evenodd" />
+      <svg class="w-full max-w-3xl mx-auto" viewBox="0 0 909 197" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+        <path class="text-gray-300 dark:text-gray-700" d="M3 116.543C55.0537 109.564 51.5835 151.024 120.121 157.073C188.658 163.122 207.745 120.78 238.977 108.682C270.209 96.5848 284.09 41.4576 336.144 45.1799C388.198 48.9023 414.225 86.1994 457.603 90.8523C500.981 95.5052 509.656 126.363 550.432 149.163C591.207 171.962 628.512 174.754 679.699 170.101C730.885 165.448 744.766 118.404 769.058 116.543C793.349 114.682 815.038 137.115 835.86 142.234C856.681 147.352 862.754 170.101 907 170.101" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="text-primary-600" d="M2 181.794C41.8055 175.629 74.5382 138.034 122.033 131.715C147.348 128.347 167.627 134.902 190.254 145.088C212.88 155.273 208.451 159.671 259.338 167.524C301.331 174.004 312.315 104.14 353.465 106.825C394.614 109.509 413.646 25.5119 457.091 32.5236C500.535 39.5353 509.216 21.4067 550.054 55.7643C590.892 90.1218 628.622 10.0367 679.886 3.02493C731.151 -3.98681 744.503 70.4346 768.832 67.6299C793.161 64.8252 815.066 117.855 835.92 125.568C856.773 133.281 862.686 105.263 907 105.263" stroke="currentColor" stroke-opacity="0.87" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M122.033 131.715C74.5382 138.034 41.8055 175.629 2 181.794V197H907V105.263C862.686 105.263 856.773 133.281 835.919 125.568C815.066 117.855 793.161 64.8252 768.832 67.6299C744.503 70.4346 731.151 -3.98681 679.886 3.02493C628.622 10.0367 590.892 90.1218 550.054 55.7643C509.216 21.4067 500.535 39.5353 457.091 32.5236C413.646 25.5119 394.614 109.509 353.465 106.825C312.315 104.14 301.331 174.004 259.338 167.524C208.451 159.671 212.88 155.273 190.254 145.088C167.627 134.902 147.348 128.347 122.033 131.715Z" fill="url(#paint0_linear_0_1)" style=""/>
+        <defs>
+          <linearGradient id="paint0_linear_0_1" x1="454.5" y1="2.55859" x2="454.5" y2="278.334" gradientUnits="userSpaceOnUse">
+            <stop class="text-primary-600" stop-color="currentColor" stop-opacity="0.1"/>
+            <stop class="text-transparent" offset="0.998978" stop-color="currentColor" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
       </svg>
-      
-      <div class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
-        <div class="md:5/12 lg:w-1/2">
-          <img
-            src="./images/pie.svg"
-            alt="image"
-            loading="lazy"
-            width=""
-            height=""
-            class="w-full"
-          />
+
+ <div class="mt-12 grid sm:grid-cols-2 gap-4 sm:gap-12 max-w-3xl w-full mx-auto">
+            <div>
+                <h3 class="text-gray-950 dark:text-white text-xl font-semibold">A technology-first approach to payments and finance</h3>
+            </div>
+            <div class="space-y-3">
+                <p class="text-gray-600 dark:text-gray-400">Natus ad ipsum pariatur autem, <span class="text-gray-950 dark:text-white font-medium">fugit laborum in atque</span> amet obcaecati? Nisi minima aspernatur, quidem nulla cupiditate nam consequatur eligendi magni adipisci.</p>
+                <p class="text-gray-600 dark:text-gray-400">Nisi minima aspernatur, quidem nulla cupiditate nam consequatur eligendi magni adipisci.</p>
+            </div>
         </div>
-        <div class="md:7/12 lg:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-            Nuxt development is carried out by passionate developers
-          </h2>
-          <p class="my-8 text-gray-600 dark:text-gray-300">
-            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia. <br> <br> Vitae error, quaerat officia delectus voluptatibus explicabo quo pariatur impedit, at reprehenderit aliquam a ipsum quas voluptatem. Quo pariatur asperiores eum amet.
-          </p>
-          <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
-            <div class="mt-8 flex gap-4 md:items-center">
-              <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
-                  <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z" clip-rule="evenodd" />
-                </svg>        
-              </div>
-              <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Chat Anytime</h3>
-                <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
-              </div> 
-            </div> 
-            <div class="pt-4 flex gap-4 md:items-center">
-              <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">  
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
-                  <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-                </svg>                                      
-              </div>
-              <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Real Time Location</h3>
-                <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
-              </div> 
-            </div> 
-          </div>
-        </div>
-      </div>
     </Container>
 </div>
